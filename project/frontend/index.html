@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gymkhana Election DApp</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Gymkhana Election DApp</h1>
+
+    <div>
+      <h2>Candidate Registration</h2>
+      <form id="candidateForm">
+        <label for="candidateName">Candidate Name:</label>
+        <input type="text" id="candidateName" required>
+        <button type="submit">Register as Candidate</button>
+      </form>
+    </div>
+
+    <div>
+      <h2>Voter Registration</h2>
+      <form id="voterForm">
+        <label for="voterAddress">Voter Ethereum Address:</label>
+        <input type="text" id="voterAddress" required>
+        <button type="submit">Register as Voter</button>
+      </form>
+    </div>
+
+    <div id="votingPage" style="display: none;">
+      <h2>Voting Page</h2>
+      <p>Select your preferences for the candidates:</p>
+      <form id="voteForm">
+        <label for="candidate1">1st Preference:</label>
+        <select id="candidate1"></select>
+        <label for="candidate2">2nd Preference:</label>
+        <select id="candidate2"></select>
+        <label for="candidate3">3rd Preference:</label>
+        <select id="candidate3"></select>
+        <button type="submit">Submit Vote</button>
+      </form>
+    </div>
+
+    <div id="resultsPage" style="display: none;">
+      <h2>Election Results</h2>
+      <p>Winning Candidate:</p>
+      <p id="winningCandidate"></p>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

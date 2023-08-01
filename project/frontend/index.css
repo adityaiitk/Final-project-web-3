@@ -1,0 +1,27 @@
+
+  /* Add your custom styles here to enhance the appearance of the DApp. */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    margin-top: 20px;
+}
+
+form {
+    margin-top: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+button {
+    margin-top: 10px;
+}
